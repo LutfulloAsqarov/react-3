@@ -1,0 +1,37 @@
+#hero {
+    background: url("../../assets/images/hero/hero-img.webp") no-repeat
+        center/cover;
+    padding: 180px 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+    &__title {
+        font-size: 48px;
+    }
+    &__btn {
+        padding: 10px 20px;
+        background: #000;
+        color: #fff;
+        border-radius: 20px;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__desc {
+        width: 50%;
+    }
+    @media (max-width: 600px) {
+        align-items: center;
+        text-align: center;
+        &__title {
+            font-size: 36px;
+        }
+        &__desc {
+            width: 100%;
+        }
+    }
+}
